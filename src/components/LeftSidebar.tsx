@@ -58,7 +58,7 @@ const LeftSidebar = () => {
 
      ))
     }
-    <button className=' rounded-full m-4 bg-cyan-600 p-2 text-2xl hover:opacity-70 transition duration-100'>Share
+    <button className=' rounded-full m-4 bg-cyan-600 p-2 text-2xl hover:opacity-70 transition duration-100'>Tweet
     </button>
     </div>
     

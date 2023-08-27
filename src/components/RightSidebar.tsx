@@ -1,10 +1,11 @@
+//import { ScrollArea } from '@radix-ui/react-scroll-area';
 import React from 'react';
 import { BsSearch } from "react-icons/bs";
 
 
 const RightSidebar = () => {
   return (
-    <section className="w-[35%] sticky top-0 overflow-scroll scrollbar-hide h-screen px-6 items-stretch flex flex-col">
+    <section className="w-[35%] sticky top-0 overflow-y-scroll no-scrollbar  h-screen px-6 items-stretch flex flex-col">
     <div>
     <div className="relative w-full h-full mt-3 ml-2 "> 
     <label htmlFor="searchBox" className="absolute top-0 left-0 p-4 h-full flex items-center justify-center">
@@ -17,7 +18,7 @@ const RightSidebar = () => {
      <h3 className="font-bold text-lg my-4 px-4">Who to follow !</h3>
      <div className="mt-3 space-y-4 mb-4 relative w-full p-4">
       {
-        Array.from({length:4}).map((_,i)=>
+        Array.from({length:5}).map((_,i)=>
         (
           <div key={i} className="rounded-3xl flex h-15  relative">
            <div className="w-10 h-10 rounded-full p-3 m-2  bg-neutral-500"></div>
@@ -26,7 +27,7 @@ const RightSidebar = () => {
             <div className="text-sm  text-gray-500 pl-2 pr-2 mb-2">@otheruser3</div>
            </div>
            <div>
-            <button className="rounded-full px-6 py-2 ml-3 mt-2 hover:bg-cyan-600 hover:opacity-70 hover:text-white transition duration-200 bg-gray-300 hover:border-white border-black hover:border text-neutral-700">
+            <button className="rounded-full px-6 py-2 ml-3 mt-2 hover:bg-cyan-600 hover:opacity-90 hover:text-white transition duration-200 bg-gray-300 hover:border-white border-black hover:border text-neutral-700">
             Follow
             </button>
            </div>
